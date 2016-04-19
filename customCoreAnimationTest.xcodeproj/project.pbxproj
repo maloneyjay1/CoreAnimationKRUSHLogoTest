@@ -12,6 +12,12 @@
 		E6D94CA31CC68FC6005CEBB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6D94CA11CC68FC6005CEBB2 /* Main.storyboard */; };
 		E6D94CA51CC68FC6005CEBB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D94CA41CC68FC6005CEBB2 /* Assets.xcassets */; };
 		E6D94CA81CC68FC6005CEBB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6D94CA61CC68FC6005CEBB2 /* LaunchScreen.storyboard */; };
+		E6D94CB31CC695B2005CEBB2 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D94CB21CC695B2005CEBB2 /* OvalLayer.swift */; };
+		E6D94CB51CC695D4005CEBB2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D94CB41CC695D4005CEBB2 /* Colors.swift */; };
+		E6D94CB71CC695F2005CEBB2 /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D94CB61CC695F2005CEBB2 /* TriangleLayer.swift */; };
+		E6D94CB91CC69623005CEBB2 /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D94CB81CC69623005CEBB2 /* RectangleLayer.swift */; };
+		E6D94CBB1CC69648005CEBB2 /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D94CBA1CC69648005CEBB2 /* ArcLayer.swift */; };
+		E6D94CBD1CC69662005CEBB2 /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D94CBC1CC69662005CEBB2 /* HolderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		E6D94CA41CC68FC6005CEBB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6D94CA71CC68FC6005CEBB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6D94CA91CC68FC6005CEBB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6D94CB21CC695B2005CEBB2 /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
+		E6D94CB41CC695D4005CEBB2 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E6D94CB61CC695F2005CEBB2 /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleLayer.swift; sourceTree = "<group>"; };
+		E6D94CB81CC69623005CEBB2 /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
+		E6D94CBA1CC69648005CEBB2 /* ArcLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcLayer.swift; sourceTree = "<group>"; };
+		E6D94CBC1CC69662005CEBB2 /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 		E6D94C9C1CC68FC6005CEBB2 /* customCoreAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				E6D94CAF1CC69534005CEBB2 /* Loader */,
+				E6D94CB11CC69550005CEBB2 /* Utilities */,
 				E6D94C9D1CC68FC6005CEBB2 /* AppDelegate.swift */,
 				E6D94C9F1CC68FC6005CEBB2 /* ViewController.swift */,
 				E6D94CA11CC68FC6005CEBB2 /* Main.storyboard */,
@@ -62,6 +76,34 @@
 				E6D94CA91CC68FC6005CEBB2 /* Info.plist */,
 			);
 			path = customCoreAnimationTest;
+			sourceTree = "<group>";
+		};
+		E6D94CAF1CC69534005CEBB2 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				E6D94CB01CC6953D005CEBB2 /* Layers */,
+				E6D94CBC1CC69662005CEBB2 /* HolderView.swift */,
+			);
+			name = Loader;
+			sourceTree = "<group>";
+		};
+		E6D94CB01CC6953D005CEBB2 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				E6D94CB21CC695B2005CEBB2 /* OvalLayer.swift */,
+				E6D94CB61CC695F2005CEBB2 /* TriangleLayer.swift */,
+				E6D94CB81CC69623005CEBB2 /* RectangleLayer.swift */,
+				E6D94CBA1CC69648005CEBB2 /* ArcLayer.swift */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		E6D94CB11CC69550005CEBB2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E6D94CB41CC695D4005CEBB2 /* Colors.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6D94CA01CC68FC6005CEBB2 /* ViewController.swift in Sources */,
+				E6D94CB71CC695F2005CEBB2 /* TriangleLayer.swift in Sources */,
+				E6D94CB51CC695D4005CEBB2 /* Colors.swift in Sources */,
 				E6D94C9E1CC68FC6005CEBB2 /* AppDelegate.swift in Sources */,
+				E6D94CBD1CC69662005CEBB2 /* HolderView.swift in Sources */,
+				E6D94CBB1CC69648005CEBB2 /* ArcLayer.swift in Sources */,
+				E6D94CB31CC695B2005CEBB2 /* OvalLayer.swift in Sources */,
+				E6D94CB91CC69623005CEBB2 /* RectangleLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
